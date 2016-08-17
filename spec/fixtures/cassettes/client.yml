@@ -1,0 +1,488 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/tokens.json
+    body:
+      encoding: UTF-8
+      string: api_key=2835773401765d36050f88f1307d721dcec6bc3a&email=vcr%40locomotivecms.com
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dc0caf2f1a92e483a11deef903942b62"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7198aa18-ee29-4805-856e-babee1f895f3
+      X-Runtime:
+      - '0.007404'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"token":"_NhP8sBjvNL52SyiPrLG"}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json
+    body:
+      encoding: UTF-8
+      string: account%5Bemail%5D=john-1%40doe.net&account%5Bname%5D=John+%231&account%5Bpassword%5D=test31&account%5Bpassword_confirmation%5D=test31&account%5Brole%5D=site_owner
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/accounts/7
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2901354da7176b2806a34db047875476"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 007d52b5-c902-423b-b527-ac8f6e304ff3
+      X-Runtime:
+      - '0.177659'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"partner_accounts","attributes":{"name":"John
+        #1","email":"john-1@doe.net","role":"site_owner","api_key":"e5cc586f52a3c1e30b4f3d61bbbb70ee1735fe8e"}}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f61a7c9a-57e3-49b3-8cef-198d15026c56
+      X-Runtime:
+      - '0.010206'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"Missing parameters"}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json
+    body:
+      encoding: UTF-8
+      string: account%5Bname%5D=John+%232
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c84d4f66-cb2d-45a0-bd7c-c443968645bc
+      X-Runtime:
+      - '0.021272'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":422,"source":{"pointer":"/data/attributes/email"},"detail":"can''t
+        be blank"},{"status":422,"source":{"pointer":"/data/attributes/password"},"detail":"can''t
+        be blank"}]}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"47c81d70be9d2cf421e58758c30d9b21"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8853e9dd-0e7e-4aea-8b27-33ba35eb8c65
+      X-Runtime:
+      - '0.021910'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"partner_accounts","attributes":{"name":"John
+        #1","email":"john-1@doe.net","role":"site_owner","api_key":"e5cc586f52a3c1e30b4f3d61bbbb70ee1735fe8e"}},{"id":"6","type":"partner_accounts","attributes":{"name":"Rspec","email":"vcr@locomotivecms.com","role":"manager","api_key":"2835773401765d36050f88f1307d721dcec6bc3a"}}],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json?filter%5Bid%5D=4
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"69ceedf3abd3502e07bc76d0dc498cdd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 27187c3e-bfed-4e93-84b1-55d38dfa0b1c
+      X-Runtime:
+      - '0.018437'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json?filter%5Bid%5D=42
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:10 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"69ceedf3abd3502e07bc76d0dc498cdd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c26a22e0-fd9a-47dc-ab8f-5348388cc7c5
+      X-Runtime:
+      - '0.011772'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:10 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts.json?filter%5Bid%5D=7
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:12:31 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6940ad100e0cff5823abc4c06cb8dc0b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 50c7503d-176c-464e-bf6a-e211653be3a1
+      X-Runtime:
+      - '0.018190'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"partner_accounts","attributes":{"name":"John
+        #1","email":"john-1@doe.net","role":"site_owner","api_key":"e5cc586f52a3c1e30b4f3d61bbbb70ee1735fe8e"}}],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:12:31 GMT
+- request:
+    method: put
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts/7.json
+    body:
+      encoding: UTF-8
+      string: account%5Bname%5D=John+Doe+%231
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:16:36 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/accounts/7
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"98ade69382d07ab46e4cceae88f095d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a9fc6abd-4b46-4177-9559-9519923c6fdf
+      X-Runtime:
+      - '0.042321'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"partner_accounts","attributes":{"name":"John
+        Doe #1","email":"john-1@doe.net","role":"site_owner","api_key":"e5cc586f52a3c1e30b4f3d61bbbb70ee1735fe8e"}}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:16:36 GMT
+- request:
+    method: delete
+    uri: http://app.locomotivesitebuilder.dev:5000/api/accounts/7.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 17 Aug 2016 10:18:35 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/accounts
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"98ade69382d07ab46e4cceae88f095d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9c90d5a2-0a6f-4683-b5fe-ff9ff5b27b33
+      X-Runtime:
+      - '0.025523'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"partner_accounts","attributes":{"name":"John
+        Doe #1","email":"john-1@doe.net","role":"site_owner","api_key":"e5cc586f52a3c1e30b4f3d61bbbb70ee1735fe8e"}}}'
+    http_version: 
+  recorded_at: Wed, 17 Aug 2016 10:18:35 GMT
+recorded_with: VCR 3.0.3
