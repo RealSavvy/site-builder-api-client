@@ -11,6 +11,7 @@ module SiteBuilder
     include SiteBuilder::Client::Resources
     include SiteBuilder::Client::Token
     include SiteBuilder::Client::Accounts
+    include SiteBuilder::Client::Themes
 
     attr_reader :options
 

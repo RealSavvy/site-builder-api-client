@@ -19,9 +19,9 @@ describe SiteBuilder::Client do
 
   describe '#accounts' do
 
-    describe '#list' do
+    describe '#all' do
 
-      subject { instance.accounts.list }
+      subject { instance.accounts.all }
 
       it { is_expected.not_to eq [] }
       it { expect(subject.first.email).not_to eq nil }

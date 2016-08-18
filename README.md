@@ -23,11 +23,7 @@ client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY'
 Then, request the resources you need to:
 
 ```ruby
-client.accounts.list.each do |account|
-  puts "#{account.email} [#{account.id}]"
-end
-
-client.accounts.list.each do |account|
+client.accounts.all.each do |account|
   puts "#{account.email} [#{account.id}]"
 end
 
@@ -50,6 +46,35 @@ client.accounts
 * `client.accounts.update(id, { key: value, ....})`
 * `client.accounts.destroy(id)`
 
+**Attributes**:
+
+- name
+- email
+- password
+- password_confirmation
+- role [site_owner, content_editor]
+
+### Theme resource
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+client.themes
+```
+
+* `client.themes.all`
+* `client.themes.all(filter: { key: value })`
+* `client.themes.create({ key: value, ....})`
+* `client.themes.update(id, { key: value, ....})`
+* `client.themes.destroy(id)`
+
+**Attributes**:
+
+- name
+- handle
+- description
+- position
+- definition
+- zipfile
 
 ## Development
 
