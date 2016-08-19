@@ -74,7 +74,39 @@ client.themes
 - description
 - position
 - definition
-- zipfile
+- zipfile (SiteBuilder::Client::UploadIO)
+
+**Example**:
+
+```ruby
+client.themes.create(zipfile: SiteBuilder::Client::UploadIO.new('<local path of my image>'), definition: <Hash>)
+```
+
+### Site resource
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+client.sites
+```
+
+* `client.sites.all`
+* `client.sites.all(filter: { key: value })`
+* `client.sites.create({ key: value, ....})`
+* `client.sites.update(id, { key: value, ....})`
+* `client.sites.destroy(id)`
+
+**Attributes**:
+
+- name
+- owner_id
+- theme_id
+- handle
+- seo_title
+- seo_description
+- seo_keywords
+- domains (Array)
+- metadata (Hash)
+- style (Hash)
 
 ## Development
 
@@ -85,7 +117,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://gitlab.com/locomotivecms-enterprise-public/ruby-api-client/issues.
-
 
 ## License
 
