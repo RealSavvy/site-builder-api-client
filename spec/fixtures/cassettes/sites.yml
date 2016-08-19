@@ -1,0 +1,251 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/tokens.json
+    body:
+      encoding: UTF-8
+      string: api_key=2835773401765d36050f88f1307d721dcec6bc3a&email=vcr%40locomotivecms.com
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 19 Aug 2016 16:01:22 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dc0caf2f1a92e483a11deef903942b62"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 72e15319-c329-4956-9129-20c2bc55d87f
+      X-Runtime:
+      - '0.029710'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"token":"_NhP8sBjvNL52SyiPrLG"}'
+    http_version: 
+  recorded_at: Fri, 19 Aug 2016 16:01:22 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 19 Aug 2016 16:01:22 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"430d04e63b6179fcd3c7bc6842c51fc4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f5f25cfa-3840-448a-a2b6-09442bcb8365
+      X-Runtime:
+      - '0.018896'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"site_builder_sites","attributes":{"name":"Acme
+        Corp","handle":"lush-reef-2505","domains":[],"metadata":{"address":"7 Allée
+        Albert Camus","phone_number":"0561715699","social_links":{"google":"http://www.google.com","twitter":"http://www.twitter.com","facebook":"http://www.facebook.com"},"opening_hours":{"friday":["9h00","12h00","14h00","17h00"],"monday":["9h00","12h00","14h00","17h00"],"tuesday":["9h00","12h00","14h00","17h00"],"saturday":["9h00","12h00","14h00","17h00"],"thursday":["9h00","12h00","14h00","17h00"],"wednesday":["9h00","12h00","14h00","17h00"]}},"style":{"main_color":"#2b8efe","big_button_text_color":"#000","big_button_background_color":"#fff200"},"owner_id":11,"theme_handle":"effilab_3a"}}],"links":{}}'
+    http_version: 
+  recorded_at: Fri, 19 Aug 2016 16:01:22 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites.json
+    body:
+      encoding: UTF-8
+      string: owner_id=11&site%5Bhandle%5D=effilab-site-1&site%5Bname%5D=Effilab+Site+%231&theme_id=8
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 19 Aug 2016 16:05:05 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4d2dc2c3d8f774e3044e9c8c2485d022"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 90bf7fed-52b1-4d94-be78-e0537cba2776
+      X-Runtime:
+      - '0.222997'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"site_builder_sites","attributes":{"name":"Effilab
+        Site #1","handle":"effilab-site-1","domains":[],"metadata":null,"style":{"main_color":"#2b8efe","big_button_text_color":"#000","big_button_background_color":"#fff200"},"owner_id":11,"theme_handle":"effilab_3a"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Aug 2016 16:05:05 GMT
+- request:
+    method: put
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/2.json
+    body:
+      encoding: UTF-8
+      string: owner_id&site%5Bname%5D=Effilab+Site+%231%21&theme_id
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 19 Aug 2016 16:05:51 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"230afbed59b3c7c6a85bbcad855137b7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45ecf4d0-a628-4f72-817a-6ff0a5021c17
+      X-Runtime:
+      - '0.029393'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"site_builder_sites","attributes":{"name":"Effilab
+        Site #1!","handle":"effilab-site-1","domains":[],"metadata":null,"style":{"main_color":"#2b8efe","big_button_text_color":"#000","big_button_background_color":"#fff200"},"owner_id":11,"theme_handle":"effilab_3a"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Aug 2016 16:05:51 GMT
+- request:
+    method: delete
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/2.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 19 Aug 2016 16:06:15 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"230afbed59b3c7c6a85bbcad855137b7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b620724-42bb-4fb1-ac6c-dec5944a79e0
+      X-Runtime:
+      - '0.043672'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"site_builder_sites","attributes":{"name":"Effilab
+        Site #1!","handle":"effilab-site-1","domains":[],"metadata":null,"style":{"main_color":"#2b8efe","big_button_text_color":"#000","big_button_background_color":"#fff200"},"owner_id":11,"theme_handle":"effilab_3a"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Aug 2016 16:06:15 GMT
+recorded_with: VCR 3.0.3
