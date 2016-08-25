@@ -2,7 +2,7 @@ module SiteBuilder
 
   class Client
 
-    PLATFORM_API = ENV['SITE_BUILDER_PLATFORM_API']
+    PLATFORM_API = ENV['SITE_BUILDER_PLATFORM_API'] || 'https://builder.locomotivecms.com'
 
     require_relative './client/resources'
     Dir[File.expand_path('../client/*.rb', __FILE__)].each { |f| require f }
