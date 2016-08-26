@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'site_builder_client', git: 'https://gitlab.com/locomotivecms-enterprise-public/ruby-api-client.git'
+gem 'site_builder_client', git: 'https://gitlab.com/locomotivecms-enterprise-public/ruby-api-client.git', branch: 'master'
 ```
 
 And then execute:
