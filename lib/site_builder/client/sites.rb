@@ -28,6 +28,17 @@ module SiteBuilder
           build(response['data'])
         end
 
+        # actions scoped by a site
+
+        def update_pickers(id, resource_type, resource_id, resource)
+          response = put("sites/#{id}/pickers/update_all", {
+            resource_type:  resource_type,
+            resource_id:    resource_id,
+            resource:       resource
+          })
+          build(response['data'])
+        end
+
         private
 
         def attributes_for_request(attributes)
