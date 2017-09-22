@@ -42,6 +42,8 @@ module SiteBuilder
         private
 
         def attributes_for_request(attributes)
+          content = attributes.delete(:content) || attributes.delete('content')
+          attributes['string_content'] = content.to_json unless content.nil?
           {
             'owner_id'  => attributes.delete(:owner_id),
             'theme_id'  => attributes.delete(:theme_id),
