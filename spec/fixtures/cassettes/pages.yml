@@ -1,0 +1,397 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/tokens.json
+    body:
+      encoding: UTF-8
+      string: api_key=e4b33e8050bcf6d721ef8a472b1986bc8eaa9352&email=vcr%40locomotivecms.com
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      Etag:
+      - W/"dc0caf2f1a92e483a11deef903942b62"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.014211'
+      X-Request-Id:
+      - 92408ea6-f4ec-47fb-b626-cd6b373a6d09
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"token":"_NhP8sBjvNL52SyiPrLG"}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:30:55 GMT
+- request:
+    method: put
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/5/pages/295.json
+    body:
+      encoding: UTF-8
+      string: page%5Btitle%5D=Another+page%21
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5c478123-5a23-4f08-b435-1887fffc777a
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites/5-itchy-swamp-6038/pages/295
+      Etag:
+      - W/"44d40ff6b4b97a9fd4d12522fe1d5e99"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.049079'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"295","type":"site_builder-pages","attributes":{"title":"Another
+        page!","slug":"another-page","seo_title":"Another page","seo_description":"","seo_keywords":"","position":1,"content":{"blocks":[{"id":"nav_1","type":"nav","label":"Navigation","content":{"logo":"/themes/landing_page/images/logo1.png","links":[{"id":"nav_1_links_0","content":{"url":"/","label":"Home"},"position":0}],"auth_links":[{"id":"nav_1_auth_links_0","content":{"url":"#","label":"Link","highlighted":false},"position":0},{"id":"nav_1_auth_links_1","content":{"url":"#","label":"Link","highlighted":false},"position":1}]},"position":0},{"id":"header_1","type":"header","label":"Header","content":{"title":"Id
+        error provident odit.","buttons":[{"id":"header_1_buttons_0","content":{"url":"#","label":"ACTION
+        \u003ci\u003ehere\u003c/i\u003e","highlighted":true},"position":0},{"id":"header_1_buttons_1","content":{"url":"#","label":"OTHER
+        ACTION"},"position":1}],"preTitle":"Culpa praesentium eos explicabo.","postTitle":"Ea
+        rerum tempora officiis distinctio."},"position":1}]},"og_title":"","og_type":"","og_url":"","og_image":null,"og_description":"","twitter_title":"","twitter_card":"","twitter_site":"","twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:30:55 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/5/pages.json
+    body:
+      encoding: UTF-8
+      string: page%5Bstring_content%5D=%7B%22blocks%22%3A%5B%7B%22type%22%3A%22call_to_action%22%2C%22content%22%3A%7B%22text%22%3A%22Hello+world%22%2C%22link%22%3A%7B%22url%22%3A%22%2F%22%2C%22label%22%3A%22Visit%22%7D%2C%22action%22%3A%7B%22url%22%3A%22%2F%22%2C%22label%22%3A%22Go%21%22%7D%7D%7D%5D%7D&page%5Btitle%5D=My+new+page
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 25972dd8-188f-4769-85e4-96bb96fd0761
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites/5-itchy-swamp-6038/pages/297
+      Etag:
+      - W/"dd5dbe877873033c3ef11e53cfa0097e"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.034026'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"297","type":"site_builder-pages","attributes":{"title":"My
+        new page","slug":"my-new-page","seo_title":"My new page","seo_description":null,"seo_keywords":null,"position":1,"content":{"blocks":[{"type":"call_to_action","content":{"text":"Hello
+        world","link":{"url":"/","label":"Visit"},"action":{"url":"/","label":"Go!"}},"id":"call_to_action_1","position":0,"label":"Call
+        to action"}]},"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_card":null,"twitter_site":null,"twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:30:55 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/5/pages.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 22 Sep 2017 15:30:55 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      Etag:
+      - W/"5f3494a21d14c4aa37fe0293296b7b42"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.044283'
+      X-Request-Id:
+      - 9d755422-399d-4936-ac48-aa362ea53401
+      Date:
+      - Fri, 22 Sep 2017 15:30:56 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"297","type":"site_builder-pages","attributes":{"title":"My
+        new page","slug":"my-new-page","seo_title":"My new page","seo_description":null,"seo_keywords":null,"position":1,"content":{"blocks":[{"id":"call_to_action_1","type":"call_to_action","label":"Call
+        to action","content":{"link":{"url":"/","label":"Visit"},"text":"Hello world","action":{"url":"/","label":"Go!"}},"position":0}]},"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_card":null,"twitter_site":null,"twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}},{"id":"295","type":"site_builder-pages","attributes":{"title":"Another
+        page!","slug":"another-page","seo_title":"Another page","seo_description":"","seo_keywords":"","position":1,"content":{"blocks":[{"id":"nav_1","type":"nav","label":"Navigation","content":{"logo":"/themes/landing_page/images/logo1.png","links":[{"id":"nav_1_links_0","content":{"url":"/","label":"Home"},"position":0}],"auth_links":[{"id":"nav_1_auth_links_0","content":{"url":"#","label":"Link","highlighted":false},"position":0},{"id":"nav_1_auth_links_1","content":{"url":"#","label":"Link","highlighted":false},"position":1}]},"position":0},{"id":"header_1","type":"header","label":"Header","content":{"title":"Id
+        error provident odit.","buttons":[{"id":"header_1_buttons_0","content":{"url":"#","label":"ACTION
+        \u003ci\u003ehere\u003c/i\u003e","highlighted":true},"position":0},{"id":"header_1_buttons_1","content":{"url":"#","label":"OTHER
+        ACTION"},"position":1}],"preTitle":"Culpa praesentium eos explicabo.","postTitle":"Ea
+        rerum tempora officiis distinctio."},"position":1}]},"og_title":"","og_type":"","og_url":"","og_image":null,"og_description":"","twitter_title":"","twitter_card":"","twitter_site":"","twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}},{"id":"5","type":"site_builder-pages","attributes":{"title":"Home
+        page","slug":"index","seo_title":"Home page","seo_description":null,"seo_keywords":null,"position":0,"content":{"blocks":[{"id":"nav_1","type":"nav","label":"Navigation","content":{"logo":"http://builder.rspec.dev:5000/attachments/1e12a636bb74f56c92f98952406c561dfd6c3752/store/ca01686b7d6cd7540ace71192b00c98c378634b0536876e6ac8881ba75b8/invoice-machine.png","links":[{"id":"nav_1_links_0","content":{"url":"/","label":"Home"},"position":0},{"id":"nav_1_links_1","content":{"url":"#tour","label":"Tour"},"position":1},{"id":"nav_1_links_2","content":{"url":"#","label":"Awesome
+        Features"},"position":2}],"Auth links":[{"id":"nav_1_Auth links_0","content":{"url":"/sign_in","label":"Sign
+        in"},"position":0},{"id":"nav_1_Auth links_1","content":{"url":"/test","label":"Sign
+        up"},"position":1}],"auth_links":[{"id":"nav_1_auth_links_0","content":{"url":"#","label":"Sign
+        in","highlighted":false},"position":0},{"id":"nav_1_auth_links_1","content":{"url":"#","label":"Sign
+        up","highlighted":true},"position":1}]},"position":0},{"id":"header_1","type":"header","label":"Header","content":{"title":"Id
+        error \u003cem\u003eprovident\u003c/em\u003e odit.","buttons":[{"id":"header_1_buttons_0","content":{"url":"http://google.com","label":"PURCHASE
+        NOW \u003cem\u003efor\u003c/em\u003e $48","highlighted":true},"position":0},{"id":"header_1_buttons_1","content":{"url":"/test","label":"TRY
+        OUR DEMO","highlighted":false},"position":1}],"preTitle":"Culpa \u003cem\u003epraesentium\u003c/em\u003e
+        \u003cem\u003eeos\u003c/em\u003e explicabo","postTitle":"Ea rerum tempora
+        officiis distinctio.","background":"http://builder.rspec.dev:5000/attachments/473d086ffb8197fdbc8bb652367e864791701b7e/store/09e0bfb8d5fb86c957c99415430dc23dfff3085392f1c5554b49d124a36d/swimming_pool.jpg"},"position":1},{"id":"call_to_action_1","type":"call_to_action","label":"Call
+        to action","content":{"link":{"url":"/","label":"More information here","target":true},"text":"The
+        \u003cem\u003eRapture\u003c/em\u003e Startup will help designers and developers
+        create awesome websites for their startups.","action":{"url":"/","label":"Purchase
+        now \u003cem\u003efor\u003c/em\u003e $42"}},"position":2},{"id":"numbers_1","type":"numbers","label":"Numbers","content":{"title":"What
+        is Inside","elements":[{"id":"numbers_1_elements_0","content":{"icon":"fa-sticky-note-o","label":"Pages","number":"20"},"position":0},{"id":"numbers_1_elements_1","content":{"icon":"fa-cubes","label":"blocks","number":"170"},"position":1},{"id":"numbers_1_elements_2","content":{"icon":"fa-newspaper-o","label":"elements","number":"600"},"position":2},{"id":"numbers_1_elements_3","content":{"icon":"fa-gavel","label":"label","number":"120"},"position":3}],"postTile":"Possimus
+        quidem quia perferendis possimus rerum porr","postTitle":"We''re talking $150
+        worth of Photoshop and Sketch templates. Totally customized. We hope you get
+        all you need."},"position":3},{"id":"team_1","type":"team","label":"Team","content":{"title":"The
+        \u003cem\u003eExecutive\u003c/em\u003e Team","people":[{"id":"team_1_people_0","content":{"bio":"As
+        CEO of Craftwork, Steven is driving the company’s vision of connecting businesses
+        with talent faster than ever. He is an expert on working with professionals
+        around the world, having also managed the company’s global tech team of 300+
+        product managers, designers and engineers.","name":"Didier Lafforgue","github":"http://github.com/did","google":"http://www.googleplus.com","picture":"http://builder.rspec.dev:5000/attachments/3abec03bc1872cb2988fe336c2d8afc6f2ded396/store/8d4fb15fb8075243625fe4a020804b042feedb2742821f945a473ee54e85/profile_small.jpeg","twitter":"http://www.twitter.com","facebook":"http://www.facebook.com","instagram":"","pinterest":""},"position":0},{"id":"team_1_people_1","content":{"bio":"As
+        CEO of Craftwork, Steven is driving the company’s vision of connecting businesses
+        with talent faster than ever. He is an expert on working with professionals
+        around the world, having also managed the company’s global tech team of 300+
+        product managers, designers and engineers.","name":"Alexander Ralphs","picture":"/themes/landing_page/images/sec7_1_team2.jpg","twitter":"http://www.twitter.com","facebook":"http://www.facebook.com"},"position":1},{"id":"team_1_people_2","content":{"bio":"Hayden
+        leads Upwork’s product and design teams and oversees the company’s products
+        across desktop, web and mobile. She is passionate about the enduring positive
+        impact of Craftwork’s marketplace for matching talent with jobs across traditional
+        economic and geographic boundaries.","name":"Taylor Richards","google":"http://www.googleplus.com","picture":"/themes/landing_page/images/sec7_1_team3.jpg","twitter":"http://www.twitter.com","facebook":"http://www.facebook.com"},"position":2},{"id":"team_1_people_3","content":{"bio":"As
+        CEO of Craftwork, Steven is driving the company’s vision of connecting businesses
+        with talent faster than ever. He is an expert on working with professionals
+        around the world, having also managed the company’s global tech team of 300+
+        product managers, designers and engineers.","name":"Zinedine zidane","picture":"http://builder.rspec.dev:5000/attachments/31e4721c328e40679b7636413cffacf1cae931b8/store/e0675e514777a18ae1de4a7f346b6d5b4a5b685c9f341478ec98b9b99e36/IMG_0591.JPG","twitter":"http://www.twitter.com"},"position":3}],"postTitle":"Here
+        are key stakeholders focused on building our community."},"position":4},{"id":"feature_1","type":"feature","label":"Feature","content":{"image":"http://builder.rspec.dev:5000/attachments/e533a50ba98c6bece7ef4a468ad28002d0e77015/store/b61c1cf3f7c8dd58f22cb916631a3a025ee0b103f12c75ed8f881b605332/submarine.png","title":"Your
+        feature title","action":{"url":"http://www.google.fr","label":"SHOW MORE","target":true},"preTitle":"A
+        pretitle","description":"\u003cp\u003eBeatae non eligendi labore. Culpa exercitationem
+        sequi. Quos accusantium et dicta voluptas sint. Voluptatem eveniet possimus
+        cum corporis molestias autem cum dicta.\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e"},"position":5},{"id":"companies_1","type":"companies","label":"Companies","content":{"list":[{"id":"companies_1_list_0","content":{"name":"hewlett
+        packard","image":"/themes/landing_page/images/sec6_1_logo_5.png"},"position":0},{"id":"companies_1_list_1","content":{"name":"chupa
+        chups","image":"/themes/landing_page/images/sec6_1_logo_3.png"},"position":1},{"id":"companies_1_list_2","content":{"name":"nescafe","image":"/themes/landing_page/images/sec6_1_logo_1.png"},"position":2},{"id":"companies_1_list_3","content":{"name":"goldman
+        sachs","image":"/themes/landing_page/images/sec6_1_logo_2.png"},"position":3},{"id":"companies_1_list_4","content":{"name":"gillette","image":"/themes/landing_page/images/sec6_1_logo_4.png"},"position":4}],"title":"Our
+        \u003ci\u003eCorporate\u003c/i\u003e Clients"},"position":6},{"id":"features_1","type":"features","label":"Features","content":{"features":[{"id":"features_1_features_0","content":{"icon":"fa-cloud","title":"Hosted
+        in the cloud","description":"No installation, no maintenance."},"position":0},{"id":"features_1_features_1","content":{"icon":"fa-pencil","title":"easy
+        to use","description":"No technical skills needed!"},"position":1},{"id":"features_1_features_2","content":{"icon":"fa-usd","title":"Super
+        cheap!","description":"Save a lot of bucks\u003cbr\u003ewith our solution"},"position":2},{"id":"features_1_features_3","content":{"icon":"fa-comment-o","title":"Support","description":"Contact
+        our team 24/24 7/7\u003cbr\u003efor any question."},"position":3}]},"position":7},{"id":"testimonials_1","type":"testimonials","label":"Testimonials","content":{"title":"What
+        \u003ci\u003eOur Customers\u003c/i\u003e Say About Us","people":[{"id":"testimonials_1_people_0","content":{"name":"Natalie
+        Portman, Nestle","picture":"/themes/landing_page/images/sec5_1_photo1.jpg","testimonial":"Craftwork
+        has created a sense of comparison and even exploration, but as an instant
+        medium. We must now devise spaces that deliver exploration, but with drama
+        and surprise"},"position":0},{"id":"testimonials_1_people_1","content":{"name":"Cameron
+        Dowman, Nescafe","picture":"/themes/landing_page/images/sec5_1_photo2.jpg","testimonial":"Craftwork
+        has created a sense of comparison and even exploration, but as an instant
+        medium. We must now devise spaces that deliver exploration, but with drama
+        and surprise"},"position":1},{"id":"testimonials_1_people_2","content":{"name":"Emma
+        Whatson, Google","picture":"/themes/landing_page/images/sec5_1_photo3.jpg","testimonial":"Craftwork
+        has created a sense of comparison and even exploration, but as an instant
+        medium. We must now devise spaces that deliver exploration, but with drama
+        and surprise"},"position":2}]},"position":8},{"id":"simple_footer_1","type":"simple_footer","label":"Simple
+        footer","content":{"name":"NoCoffee SARL","links":[{"id":"simple_footer_1_links_0","content":{"url":"/","label":"Our
+        blog"},"position":0},{"id":"simple_footer_1_links_1","content":{"url":"/","label":"Store"},"position":1},{"id":"simple_footer_1_links_2","content":{"url":"/","label":"Contact
+        Us"},"position":2}]},"position":9}]},"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_card":null,"twitter_site":null,"twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}}],"links":{}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:30:56 GMT
+- request:
+    method: delete
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/5/pages/298.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Fri, 22 Sep 2017 15:31:27 GMT
+      X-Site-Builder-Email:
+      - vcr@locomotivecms.com
+      X-Site-Builder-Token:
+      - _NhP8sBjvNL52SyiPrLG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites/5-itchy-swamp-6038/pages
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      Etag:
+      - W/"ca59b86be9993379b77b5f51b81ee00f"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.036028'
+      X-Request-Id:
+      - bf381fb2-3d6b-43e1-98e7-02364fc7e4fa
+      Date:
+      - Fri, 22 Sep 2017 15:31:27 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"298","type":"site_builder-pages","attributes":{"title":"To
+        be removed","slug":"to-be-removed","seo_title":"To be removed","seo_description":"","seo_keywords":"","position":1,"content":{"blocks":[]},"og_title":"","og_type":"","og_url":"","og_image":null,"og_description":"","twitter_title":"","twitter_card":"","twitter_site":"","twitter_image":null,"translated_page_ids":{},"blog_posts":null,"blog_tags":[],"content_type":null,"content_entries":null},"relationships":{"content_entry":{"data":null},"blog_post":{"data":null}}}}'
+    http_version: 
+  recorded_at: Fri, 22 Sep 2017 15:31:27 GMT
+recorded_with: VCR 3.0.3

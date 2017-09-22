@@ -13,6 +13,7 @@ module SiteBuilder
     include SiteBuilder::Client::Accounts
     include SiteBuilder::Client::Themes
     include SiteBuilder::Client::Sites
+    include SiteBuilder::Client::Pages
 
     attr_reader :options
 

@@ -108,6 +108,21 @@ client.sites
 - metadata (Hash)
 - style (Hash)
 
+### Page resource
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+site = client.sites.all(filter: { handle: 'my-site'}).first
+client.pages.scope_by(site)
+client.pages
+```
+
+* `client.pages.all`
+* `client.pages.all(filter: { key: value })`
+* `client.pages.create({ key: value, ....})`
+* `client.pages.update(id, { key: value, ....})`
+* `client.pages.destroy(id)`
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

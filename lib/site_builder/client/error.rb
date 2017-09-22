@@ -46,6 +46,7 @@ module SiteBuilder
     class ServerSideError < Error; end
     class TimeoutError < Error; end
 
+    class ResourceNotScopedBySite < Error; end
 
     class FileTooBigError < Error
 
