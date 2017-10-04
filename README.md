@@ -123,6 +123,27 @@ client.pages
 * `client.pages.update(id, { key: value, ....})`
 * `client.pages.destroy(id)`
 
+**Attributes**:
+
+- title
+- slug
+- content (Hash)
+- seo_title
+- seo_keywords
+- seo_description
+- og_title
+- og_type
+- og_url
+- og_description
+- og_image
+- remove_og_image
+- twitter_title
+- twitter_description
+- twitter_card
+- twitter_site
+- twitter_image
+- remove_twitter_image
+
 ### Blog posts
 
 ```ruby
@@ -137,6 +158,70 @@ client.blog_posts
 * `client.blog_posts.create({ key: value, ....})`
 * `client.blog_posts.update(id, { key: value, ....})`
 * `client.blog_posts.destroy(id)`
+
+**Attributes:**
+
+- title
+- slug
+- content
+- short_content
+- author_name
+- tag_names
+- banner
+- remove_banner
+- published
+- published_at
+- seo_title
+- seo_keywords
+- seo_description
+- og_title
+- og_type
+- og_url
+- og_description
+- og_image
+- remove_og_image
+- twitter_title
+- twitter_description
+- twitter_card
+- twitter_site
+- twitter_image
+- remove_twitter_image
+
+### Content entries
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+site = client.sites.all(filter: { handle: 'my-site'}).first
+client.content_entries.scope_by(site, '<YOUR CONTENT TYPE>')
+client.content_entries
+```
+
+* `client.content_entries.all`
+* `client.content_entries.all(filter: { key: value })`
+* `client.content_entries.create({ key: value, .... })`
+* `client.content_entries.update(id, { key: value, .... })`
+* `client.content_entries.destroy(id)`
+
+**Attributes**:
+
+- slug
+- content (Hash)
+- visible
+- seo_title
+- seo_keywords
+- seo_description
+- og_title
+- og_type
+- og_url
+- og_description
+- og_image
+- remove_og_image
+- twitter_title
+- twitter_description
+- twitter_card
+- twitter_site
+- twitter_image
+- remove_twitter_image
 
 ## Development
 

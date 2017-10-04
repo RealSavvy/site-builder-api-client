@@ -36,7 +36,6 @@ module SiteBuilder
 
         def attributes_for_request(attributes)
           content = attributes.delete(:content) || attributes.delete('content')
-          attributes['string_content'] = content.to_json unless content.nil?
           { 'blog_post' => attributes }
         end
 
