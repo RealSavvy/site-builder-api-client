@@ -1,0 +1,326 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/tokens.json
+    body:
+      encoding: UTF-8
+      string: api_key=a16f0cb36b8b86f6f8abe3ab535b79eb52242e37&email=rspec%40nocoffee.fr
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 04 Oct 2017 15:32:46 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 88d5d734-6ff3-4a9d-885e-05ef4893ddfb
+      Etag:
+      - W/"b96490acd59e6e5817a92b76a9a4cdde"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.107781'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 04 Oct 2017 15:32:46 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"token":"BtZoTN14iBFDwAfadcKR"}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 15:32:46 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/119/content_types/team.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 04 Oct 2017 15:32:46 GMT
+      X-Site-Builder-Email:
+      - rspec@nocoffee.fr
+      X-Site-Builder-Token:
+      - BtZoTN14iBFDwAfadcKR
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 79f71f02-a658-496b-b6ab-695489ffcc6f
+      Etag:
+      - W/"29dfa912eaeef54ebcfc7af02d1e18ae"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.311235'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 04 Oct 2017 15:32:46 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"29","type":"site_builder-content_entries","attributes":{"label":null,"path":null,"slug":"john-doe","visible":true,"content":{"email":"john@doe.net","photo":"https://placehold.it/160x160?text=Photo","title":"CEO","mobile":"555-555-5555","fullname":"John
+        Doe","biography":"\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Mauris id commodo est, vitae rhoncus velit. Sed varius, ex eget feugiat
+        fermentum, dolor ligula varius leo, et finibus nisi quam vitae turpis. Sed
+        maximus at nisl in mollis. Ut massa tellus, porta eu tincidunt et, tristique
+        non magna. Integer at nisi ac tellus porta efficitur. Praesent faucibus quis
+        dolor at fringilla. Sed pharetra vehicula lectus non faucibus.\u003c/p\u003e","showButton":true,"license_number":"123456789","social_media_accounts":[{"id":"social_media_accounts-0","content":{"url":"https://www.facebook.com/yourcompany","name":"Facebook"}},{"id":"social_media_accounts-1","content":{"url":"https://www.twitter.com/yourcompany","name":"Twitter"}}]},"urls":null,"seo_title":null,"seo_description":null,"seo_keywords":null,"position":1,"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_description":null,"twitter_card":null,"twitter_site":null,"twitter_image":null}}],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 15:32:46 GMT
+- request:
+    method: get
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/119/content_types/team.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 04 Oct 2017 15:33:24 GMT
+      X-Site-Builder-Email:
+      - rspec@nocoffee.fr
+      X-Site-Builder-Token:
+      - BtZoTN14iBFDwAfadcKR
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 8914593e-adc5-430e-87f2-d941396cc3d0
+      Etag:
+      - W/"29dfa912eaeef54ebcfc7af02d1e18ae"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.094548'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 04 Oct 2017 15:33:24 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"29","type":"site_builder-content_entries","attributes":{"label":null,"path":null,"slug":"john-doe","visible":true,"content":{"email":"john@doe.net","photo":"https://placehold.it/160x160?text=Photo","title":"CEO","mobile":"555-555-5555","fullname":"John
+        Doe","biography":"\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Mauris id commodo est, vitae rhoncus velit. Sed varius, ex eget feugiat
+        fermentum, dolor ligula varius leo, et finibus nisi quam vitae turpis. Sed
+        maximus at nisl in mollis. Ut massa tellus, porta eu tincidunt et, tristique
+        non magna. Integer at nisi ac tellus porta efficitur. Praesent faucibus quis
+        dolor at fringilla. Sed pharetra vehicula lectus non faucibus.\u003c/p\u003e","showButton":true,"license_number":"123456789","social_media_accounts":[{"id":"social_media_accounts-0","content":{"url":"https://www.facebook.com/yourcompany","name":"Facebook"}},{"id":"social_media_accounts-1","content":{"url":"https://www.twitter.com/yourcompany","name":"Twitter"}}]},"urls":null,"seo_title":null,"seo_description":null,"seo_keywords":null,"position":1,"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_description":null,"twitter_card":null,"twitter_site":null,"twitter_image":null}}],"links":{}}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 15:33:24 GMT
+- request:
+    method: post
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/119/content_types/team.json
+    body:
+      encoding: UTF-8
+      string: content_entry%5Bcontent%5D=%7B%22fullname%22%3A%22Jane+Doe%22%2C%22title%22%3A%22CFO%22%7D
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 04 Oct 2017 15:34:53 GMT
+      X-Site-Builder-Email:
+      - rspec@nocoffee.fr
+      X-Site-Builder-Token:
+      - BtZoTN14iBFDwAfadcKR
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - dc3969af-7708-46d2-a957-0a99cd88e342
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites/119-celestial-forest-1309/content_types/team/30-jane-doe
+      Etag:
+      - W/"6fafc066161b2ea1ef7c42a068dd99ed"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.587971'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 04 Oct 2017 15:34:53 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"30","type":"site_builder-content_entries","attributes":{"label":null,"path":null,"slug":"jane-doe","visible":true,"content":{"fullname":"Jane
+        Doe","title":"CFO"},"urls":null,"seo_title":null,"seo_description":null,"seo_keywords":null,"position":2,"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_description":null,"twitter_card":null,"twitter_site":null,"twitter_image":null}}}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 15:34:53 GMT
+- request:
+    method: delete
+    uri: http://app.locomotivesitebuilder.dev:5000/api/sites/119/content_types/team/30.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Wed, 04 Oct 2017 15:35:19 GMT
+      X-Site-Builder-Email:
+      - rspec@nocoffee.fr
+      X-Site-Builder-Token:
+      - BtZoTN14iBFDwAfadcKR
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Vary:
+      - Origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ef40281e-eb1d-4a7c-abf9-dc3ef5f298c1
+      Location:
+      - http://app.locomotivesitebuilder.dev:5000/api/sites/119-celestial-forest-1309/content_types/team
+      Etag:
+      - W/"ec8b1a337be5c64353250318c593f5d8"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.119649'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 04 Oct 2017 15:35:19 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.1
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.1
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"30","type":"site_builder-content_entries","attributes":{"label":null,"path":null,"slug":"jane-doe","visible":true,"content":{"title":"CFO","fullname":"Jane
+        Doe"},"urls":null,"seo_title":null,"seo_description":null,"seo_keywords":null,"position":2,"og_title":null,"og_type":null,"og_url":null,"og_image":null,"og_description":null,"twitter_title":null,"twitter_description":null,"twitter_card":null,"twitter_site":null,"twitter_image":null}}}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 15:35:19 GMT
+recorded_with: VCR 3.0.3
