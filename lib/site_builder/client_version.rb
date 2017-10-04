@@ -1,3 +1,3 @@
 module SiteBuilder
-  CLIENT_VERSION = '0.2.0'
+  CLIENT_VERSION = '0.3.0'
 end
