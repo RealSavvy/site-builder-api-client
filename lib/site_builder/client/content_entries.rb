@@ -36,9 +36,10 @@ module SiteBuilder
         private
 
         def attributes_for_request(attributes)
-          content = attributes.delete(:content) || attributes.delete('content')
-          attributes['content'] = content.to_json unless content.nil?
-          { 'content_entry' => attributes }
+          _attributes = attributes.dup
+          content = _attributes.delete(:content) || _attributes.delete('content')
+          _attributes['content'] = content.to_json unless content.nil?
+          { 'content_entry' => _attributes }
         end
 
         def path

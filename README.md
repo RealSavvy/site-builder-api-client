@@ -17,7 +17,7 @@ And then execute:
 First, create your client session:
 
 ```ruby
-client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY>')
 ```
 
 Then, request the resources you need to:
