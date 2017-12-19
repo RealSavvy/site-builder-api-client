@@ -49,8 +49,6 @@ module SiteBuilder
 
         def paginate(path, params, &block)
           Enumerator.new do |y|
-            page = params[:page] || { number: 0, size: 10 }
-
             loop do
               response = client.get(path, params)
 
@@ -60,6 +58,8 @@ module SiteBuilder
 
               break if response['links']['next'].nil?
 
+              # setup the next page
+              params[:page] ||= { number: 1, size: 10 }
               params[:page][:number] += 1
             end
           end

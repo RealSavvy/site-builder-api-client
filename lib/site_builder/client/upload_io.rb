@@ -1,3 +1,5 @@
+require 'faraday'
+
 module SiteBuilder
   class Client
 
