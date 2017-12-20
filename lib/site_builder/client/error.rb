@@ -33,7 +33,7 @@ module SiteBuilder
       private
 
       def build_message
-        @response ? body['error'] : nil
+        @response ? (body['error'] || body['message']) : nil
       end
 
     end
