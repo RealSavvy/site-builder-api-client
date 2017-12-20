@@ -135,13 +135,13 @@ client.pages
 - og_type
 - og_url
 - og_description
-- og_image
+- og_image (SiteBuilder::Client::ImageUploadIO)
 - remove_og_image
 - twitter_title
 - twitter_description
 - twitter_card
 - twitter_site
-- twitter_image
+- twitter_image (SiteBuilder::Client::ImageUploadIO)
 - remove_twitter_image
 
 ### Blog posts
@@ -166,11 +166,11 @@ client.blog_posts
 - content
 - short_content
 - author_name
-- tag_names
-- banner
+- tag_names (Array)
+- banner (SiteBuilder::Client::ImageUploadIO)
 - remove_banner
 - published
-- published_at
+- published_at (format: %m/%d/%Y %H:%M %Z)
 - seo_title
 - seo_keywords
 - seo_description
@@ -178,14 +178,29 @@ client.blog_posts
 - og_type
 - og_url
 - og_description
-- og_image
+- og_image (SiteBuilder::Client::ImageUploadIO)
 - remove_og_image
 - twitter_title
 - twitter_description
 - twitter_card
 - twitter_site
-- twitter_image
+- twitter_image (SiteBuilder::Client::ImageUploadIO)
 - remove_twitter_image
+
+**Example:**
+
+```ruby
+client.blog_posts.create({
+  title:          'Hello world',
+  tag_names:      ['welcome'],
+  published:      true,
+  published_at:   '10/15/2017 23:48 UTC'
+  content:        '<p>Lorem ipsum</p>',
+  banner:         SiteBuilder::Client::ImageUploadIO.new('./banner.png'),
+  og_image:       SiteBuilder::Client::ImageUploadIO.new('./fb.png'),
+  twitter_image:  SiteBuilder::Client::ImageUploadIO.new('./twitter.png')
+})
+```
 
 ### Content entries
 
@@ -214,13 +229,13 @@ client.content_entries
 - og_type
 - og_url
 - og_description
-- og_image
+- og_image (SiteBuilder::Client::ImageUploadIO)
 - remove_og_image
 - twitter_title
 - twitter_description
 - twitter_card
 - twitter_site
-- twitter_image
+- twitter_image (SiteBuilder::Client::ImageUploadIO)
 - remove_twitter_image
 
 ## Development
