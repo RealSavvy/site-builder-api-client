@@ -35,7 +35,6 @@ module SiteBuilder
         private
 
         def attributes_for_request(attributes)
-          content = attributes.delete(:content) || attributes.delete('content')
           { 'blog_post' => attributes }
         end
 
