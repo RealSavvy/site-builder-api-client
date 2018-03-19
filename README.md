@@ -238,6 +238,31 @@ client.content_entries
 - twitter_image (SiteBuilder::Client::ImageUploadIO)
 - remove_twitter_image
 
+### Assets
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+site = client.sites.all(filter: { handle: 'my-site'}).first
+client.assets.scope_by(site)
+client.assets
+```
+
+* `client.assets.all`
+* `client.assets.create({ key: value, ....})`
+* `client.assets.destroy(id)`
+
+**Attributes:**
+
+- attachment (SiteBuilder::Client::ImageUploadIO)
+
+**Example:**
+
+```ruby
+client.assets.create({
+  attachment: SiteBuilder::Client::ImageUploadIO.new('./background_image.png')
+})
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

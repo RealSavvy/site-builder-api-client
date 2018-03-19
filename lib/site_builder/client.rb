@@ -16,6 +16,7 @@ module SiteBuilder
     include SiteBuilder::Client::Pages
     include SiteBuilder::Client::BlogPosts
     include SiteBuilder::Client::ContentEntries
+    include SiteBuilder::Client::Assets
 
     attr_reader :options
 
