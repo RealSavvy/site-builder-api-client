@@ -237,6 +237,13 @@ client.content_entries
 - twitter_site
 - twitter_image (SiteBuilder::Client::ImageUploadIO)
 - remove_twitter_image
+- anonymous_edit_url
+
+**Example:**
+
+```ruby
+client.content_entries.all(filter: { 'content.email' => 'john@doe.net' }).first.anonymous_edit_url
+```
 
 ### Assets
 
