@@ -17,6 +17,7 @@ module SiteBuilder
     include SiteBuilder::Client::BlogPosts
     include SiteBuilder::Client::ContentEntries
     include SiteBuilder::Client::Assets
+    include SiteBuilder::Client::UrlRedirections
 
     attr_reader :options
 
