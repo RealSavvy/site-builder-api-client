@@ -202,6 +202,36 @@ client.blog_posts.create({
 })
 ```
 
+### Url redirections
+
+```ruby
+client = SiteBuilder::Client.new(email: '<YOUR EMAIL>', api_key: '<YOUR API KEY')
+site = client.sites.all(filter: { handle: 'my-site'}).first
+client.url_redirections.scope_by(site)
+client.url_redirections
+```
+
+* `client.url_redirections.all`
+* `client.url_redirections.all(filter: { key: value })`
+* `client.url_redirections.create({ key: value, ....})`
+* `client.url_redirections.update(id, { key: value, ....})`
+* `client.url_redirections.destroy(id)`
+
+**Attributes:**
+
+- old_path
+- new_path
+
+
+**Example:**
+
+```ruby
+client.url_redirections.create({
+  old_path: '/the/old/path',
+  new_path: '/the-new-path'
+})
+```
+
 ### Content entries
 
 ```ruby
